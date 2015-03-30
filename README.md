@@ -18,17 +18,32 @@
 - 学习重用UICollectionViewCell和UITableViewCell；
 
 ## 预览
+### 首页
 ![首页](https://raw.githubusercontent.com/GoldyMark/iOS-app-demo/master/images/preview/home.png)
+
+### 搜索框
 ![搜索](https://raw.githubusercontent.com/GoldyMark/iOS-app-demo/master/images/preview/search.png)
+
+### 发现页面
 ![发现](https://raw.githubusercontent.com/GoldyMark/iOS-app-demo/master/images/preview/discover.png)
+
+### 品牌页面
 ![品牌](https://raw.githubusercontent.com/GoldyMark/iOS-app-demo/master/images/preview/brands.png)
+
+### 购物车正常状态
 ![购物车正常状态](https://raw.githubusercontent.com/GoldyMark/iOS-app-demo/master/images/preview/shoppingCartNormal.png)
+
+### 购物车编辑状态
 ![购物车编辑状态](https://raw.githubusercontent.com/GoldyMark/iOS-app-demo/master/images/preview/shoppingCartEditing.png)
+
+### 个人中心
 ![个人中心](https://raw.githubusercontent.com/GoldyMark/iOS-app-demo/master/images/preview/personalCenter.png)
+
+### 登陆界面
 ![登陆](https://raw.githubusercontent.com/GoldyMark/iOS-app-demo/master/images/preview/login.png)
 
 ## 暂时已知BUG
-- 在ODHomeViewController里设置了选中商品时背景色为绿色，不选中时背景色为蓝色，但点击商品时下方的某些单元格的背景色也会同时变为绿色（例如：点击商品1，下方某商品的背景色同时也变成绿色），而且来回滚动的话其他cell会随机变成绿色（也不算是随机，但结果会随滚动速度而异）。Log了indexPath查看也没有发现有重复的现象，估计问题是出在cell的重用上，可能是对UICollectionView和UITableView的显示机制还不是很了解。最后google之也无果（有人说是bug，暂未求证），如下图所示：
+- 在ODHomeViewController里设置了选中商品时背景色为绿色，不选中时背景色为蓝色，但点击商品时下方的某些单元格的背景色也会同时变为绿色（例如：点击商品1，下方某商品的背景色同时也变成绿色，至于是商品几，不同分辨率的情况下不同），而且来回滚动的话其他cell会随机变成绿色（也不算是随机，但结果会随滚动速度而异）。Log了indexPath查看也没有发现有重复的现象，估计问题是出在cell的重用上，可能是对UICollectionView和UITableView的显示机制还不是很了解。最后google之也无果（有人说是bug，暂未求证），如下图所示：
 ![bug1](https://raw.githubusercontent.com/GoldyMark/iOS-app-demo/master/images/bug/bug1.png)
 - 上述bug经多次测试，可理解为：点击第一页的商品1后，第二页的商品n（位置同商品1）的背景色也会变成绿色，但明明两个cell的indexPath是不同的，不知道为什么会获取到同一个，如下图所示：
 ![bug2](https://raw.githubusercontent.com/GoldyMark/iOS-app-demo/master/images/bug/bug2.png)
