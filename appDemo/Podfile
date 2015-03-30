@@ -1,0 +1,5 @@
+platform:ios,'6.0'
+pod 'FontAwesome+iOS'
+#pod 'FMDB'
+pod 'FontAwesomeKit/FontAwesome'
+pod 'ZXingObjC', '~> 3.0'

@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FontAwesome+iOS" "${PODS_ROOT}/Headers/Public/FontAwesomeKit" "${PODS_ROOT}/Headers/Public/ZXingObjC"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FontAwesome+iOS" -isystem "${PODS_ROOT}/Headers/Public/FontAwesomeKit" -isystem "${PODS_ROOT}/Headers/Public/ZXingObjC"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-FontAwesome+iOS" -l"Pods-FontAwesomeKit" -l"Pods-ZXingObjC" -framework "AVFoundation" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreText" -framework "CoreVideo" -framework "Foundation" -framework "ImageIO" -framework "QuartzCore" -framework "UIKit"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods

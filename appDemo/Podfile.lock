@@ -1,0 +1,20 @@
+PODS:
+  - FontAwesome+iOS (0.1.4)
+  - FontAwesomeKit/Core (2.2.0)
+  - FontAwesomeKit/FontAwesome (2.2.0):
+    - FontAwesomeKit/Core
+  - ZXingObjC (3.0.4):
+    - ZXingObjC/All (= 3.0.4)
+  - ZXingObjC/All (3.0.4)
+
+DEPENDENCIES:
+  - FontAwesome+iOS
+  - FontAwesomeKit/FontAwesome
+  - ZXingObjC (~> 3.0)
+
+SPEC CHECKSUMS:
+  FontAwesome+iOS: 816c20304edef4ca92835de669577005cbaaf261
+  FontAwesomeKit: 61f0b4f12f1b11b7489bc7d1507a8692547f3857
+  ZXingObjC: ae99f1ef6d791ebe4a508f1bec20b2d7a20288c5
+
+COCOAPODS: 0.36.0

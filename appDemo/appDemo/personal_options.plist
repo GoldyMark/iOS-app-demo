@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>我的订单</string>
+			<key>image</key>
+			<string>info.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>我的询价单</string>
+			<key>image</key>
+			<string>info.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>帮我找结果</string>
+			<key>image</key>
+			<string>info.png</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>收货地址管理</string>
+			<key>image</key>
+			<string>info.png</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>修改密码</string>
+			<key>image</key>
+			<string>info.png</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>客服电话</string>
+			<key>image</key>
+			<string>info.png</string>
+			<key>telephone</key>
+			<string>400-123-4567</string>
+		</dict>
+	</array>
+</array>
+</plist>
